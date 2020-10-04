@@ -25,15 +25,15 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(node1 src/node1.cpp)
-target_link_libraries(node1 ${catkin_LIBRARIES})
-add_dependencies(node1 ros_sample0_generate_messages_cpp)
+add_executable(${PROJECT_NAME}_node1 src/node1.cpp)
+target_link_libraries(${PROJECT_NAME}_node1 ${catkin_LIBRARIES})
+add_dependencies(${PROJECT_NAME}_node1 ros_sample0_generate_messages_cpp)
 
-add_executable(node2 src/node2.cpp)
-target_link_libraries(node2 ${catkin_LIBRARIES})
-add_dependencies(node2 ros_sample0_generate_messages_cpp)
+add_executable(${PROJECT_NAME}_node2 src/node2.cpp)
+target_link_libraries(${PROJECT_NAME}_node2 ${catkin_LIBRARIES})
+add_dependencies(${PROJECT_NAME}_node2 ros_sample0_generate_messages_cpp)
 
-add_executable(node3 src/node3.cpp)
-target_link_libraries(node3 ${catkin_LIBRARIES})
-add_dependencies(node3 ros_sample0_generate_messages_cpp)
+add_executable(${PROJECT_NAME}_node3 src/node3.cpp)
+target_link_libraries(${PROJECT_NAME}_node3 ${catkin_LIBRARIES})
+add_dependencies(${PROJECT_NAME}_node3 ros_sample0_generate_messages_cpp)
 
