@@ -49,8 +49,8 @@ void Node3::callback(const ros_sample0::TimestampArray::ConstPtr &input_msg) {
 }
 
 int main(int argc, char **argv) {
-  ros::init(argc, argv, "node2");
-  Node3 node2;
+  ros::init(argc, argv, "node3");
+  Node3 node3;
   ros::spin();
 
   return 0;
